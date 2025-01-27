@@ -46,3 +46,27 @@ print(f"""
     {wiek}""")
 # "36.6
 #     47"
+
+# typ logiczny
+#  prawda fałsz
+# True False
+# 1 0
+czy_znasz_pythona = True
+print(czy_znasz_pythona)  # True
+print(type(czy_znasz_pythona))  # <class 'bool'>, boolean, logiczny
+
+print(int(czy_znasz_pythona))  # 1
+print(int(False))  # 0
+
+print(bool(1))  # bool() - rzutowanie na typ boolean,True
+print(bool(0))  # False
+
+print(bool(100))  # True
+print(bool(-100))  # True
+print(bool("Radek"))  # True
+print(bool(0.01))  # True
+print(bool("0"))  # True
+
+print(bool(0))  # False
+print(bool(""))  # False
+print(bool(None))  # False, odpowiednik null, nic, stan nieokreślony
