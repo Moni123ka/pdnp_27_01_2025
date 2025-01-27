@@ -70,3 +70,48 @@ print(bool("0"))  # True
 print(bool(0))  # False
 print(bool(""))  # False
 print(bool(None))  # False, odpowiednik null, nic, stan nieokreślony
+
+# Expression    Evaluates to
+# True and True    True
+# True and False    False
+# False and True    False
+# False and False    False
+# The or Operator’s Truth Table:
+
+# and - i
+print(True and True)  # True
+print(True and False)  # False
+
+#
+# Expression    Evaluates to
+# True or True    True
+# True or False    True
+# False or True    True
+# False or False    False
+#
+
+# or - lub
+print(True or True)  # True
+print(True or False)  # True
+print(False or False)  # False
+#
+#
+# The not Operator’s Truth Table:
+# Expression    Evaluates to
+# not True    False
+# not False
+
+# not - negacja
+print(not True)  # False
+print(not False)  # True
+
+a = 8
+b = 6
+
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 8 > 6= True
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 8 < 6= False
+print(f"Porównanie {a} <= {b} = {a <= b}")  # Porównanie 8 <= 6 = False
+print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 8 >= 6 = True
+print(f"Porównanie {a >= b = } ")  # Porównanie a >= b = True
+print(f"Porównanie {a} == {b} = {a == b}")  # Porównanie 8 == 6 = False, czy równe ==
+print(f"Porównanie {a} != {b} = {a != b}")  # Porównanie 8 != 6 = True, czy różne !=
