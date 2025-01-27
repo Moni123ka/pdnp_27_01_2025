@@ -97,3 +97,64 @@ print(lista)
 # ['Radek', 'Krzysztof', 'Tomek', 'Zenek', 'Anna', 'Mateusz', 'Asia']
 print(lista.pop(-3))  # Anna
 print(lista.pop())  # Asia, usunie ostatni element
+
+a = 1
+b = 3
+a = b
+print(f"{a=}, {b=}")  # a=3, b=3
+b = 9
+print(f"{a=}, {b=}")  # a=3, b=9
+
+lista_2 = lista  # odpowiednik a = b, kopia adersu listy, kopia referencji
+lista_copy = lista.copy()  # kopia elementów listy
+print(lista_2)  # ['Radek', 'Krzysztof', 'Tomek', 'Zenek', 'Mateusz']
+print(lista)  # ['Radek', 'Krzysztof', 'Tomek', 'Zenek', 'Mateusz']
+lista.clear()  # usuniécie wszystkich elemntów z listy
+print(lista_2)  # []
+print(lista)  # []
+print(lista_copy)  # ['Radek', 'Krzysztof', 'Tomek', 'Zenek', 'Mateusz']
+print(id(lista_2))  # 2188283810176
+print(id(lista))  # 2188283810176
+print(id(lista_copy))  # 2186140024640
+
+liczby = [54, 999, 34, 22, 12.34, 567]
+print(liczby)  # [54, 999, 34, 22, 12.34, 567]
+print(type(liczby))  # <class 'list'>
+liczby.sort()
+print(liczby)  # [12.34, 22, 34, 54, 567, 999]
+
+liczby = [54, 999, 34, 22, 12.34, 567, "A"]
+print(liczby)  # [54, 999, 34, 22, 12.34, 567, 'A']
+print(type(liczby))  # <class 'list'>
+# liczby.sort()# TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(lista_copy)
+lista_copy.sort()
+print(lista_copy)
+# ['Radek', 'Krzysztof', 'Tomek', 'Zenek', 'Mateusz']
+# ['Krzysztof', 'Mateusz', 'Radek', 'Tomek', 'Zenek']
+
+lista_copy.sort(reverse=True)
+print(lista_copy)
+# ['Zenek', 'Tomek', 'Radek', 'Mateusz', 'Krzysztof']
+
+lista_copy.reverse()
+print(lista_copy)
+# ['Krzysztof', 'Mateusz', 'Radek', 'Tomek', 'Zenek']
+
+liczby[3] = 666
+print(liczby[0:3])  # [54, 999, 34]
+print(liczby[-2])  # 567
+print(liczby)  # [54, 999, 34, 666, 12.34, 567, 'A']
+
+# rozpakowanie sekwencji
+tekst = 'Pyth on.'
+lista1 = list(tekst)
+print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
+
+krotka = tuple(lista_copy)
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # ('Krzysztof', 'Mateusz', 'Radek', 'Tomek', 'Zenek')
