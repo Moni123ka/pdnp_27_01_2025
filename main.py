@@ -16,3 +16,6 @@ if __name__ == '__main__':
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 # 2 x shift - podręczne menu
 # wheel, theme
+# PEP8 https://peps.python.org/pep-0008/
+# zasady stylistyczne pisaniu kodu
+# ctrl alt l - formatowanie kodu do PEP8
