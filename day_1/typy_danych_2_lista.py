@@ -62,3 +62,38 @@ print(lista[::2])  # ['Radek', 'Zenek', 'Anna'], co drugi element
 
 print(lista[::-1])  # krok w tył, wypisana odwrócona lista
 # ['Maciek', 'Anna', 'Bogdan', 'Zenek', 'Tomek', 'Radek']
+
+# nadpisanie elementu w liście na wskazanym indeksie
+# zmiana na oryginalnej liście
+lista[3] = "Asia"
+print(lista)  # ['Radek', 'Tomek', 'Zenek', 'Asia', 'Anna', 'Maciek']
+
+# dopisanie elementu do listy we wskazanym miejscu
+# insert()
+lista.insert(1, "Krzysztof")
+print(lista)
+# ['Radek', 'Krzysztof', 'Tomek', 'Zenek', 'Asia', 'Anna', 'Maciek']
+
+lista.insert(15, "Mateusz")
+print(lista)
+# ['Radek', 'Krzysztof', 'Tomek', 'Zenek', 'Asia', 'Anna', 'Maciek', 'Mateusz']
+
+# sprawdzenie indeksu dla wskazanego elementu, zwraca pierwszy napotkany
+print(lista.index("Asia"))  # index numer 4
+lista.append("Asia")
+print(lista)
+# ['Radek', 'Krzysztof', 'Tomek', 'Zenek', 'Asia', 'Anna', 'Maciek', 'Mateusz', 'Asia']
+print(lista.index("Asia"))  # zwraca pierwszy napotkany, 4
+
+# usunięcie elementu po indeksie, pierwszy napotkany
+lista.remove("Asia")
+print(lista)
+# ['Radek', 'Krzysztof', 'Tomek', 'Zenek', 'Anna', 'Maciek', 'Mateusz', 'Asia']
+
+# usunięcie po indeksie pop()
+# lista.pop(5)
+print(lista.pop(5))  # Maciek
+print(lista)
+# ['Radek', 'Krzysztof', 'Tomek', 'Zenek', 'Anna', 'Mateusz', 'Asia']
+print(lista.pop(-3))  # Anna
+print(lista.pop())  # Asia, usunie ostatni element
