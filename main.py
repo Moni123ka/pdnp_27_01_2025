@@ -19,3 +19,6 @@ if __name__ == '__main__':
 # PEP8 https://peps.python.org/pep-0008/
 # zasady stylistyczne pisaniu kodu
 # ctrl alt l - formatowanie kodu do PEP8
+# (.venv) PS C:\Users\Administrator\PycharmProjects\pdnp_27_01_2025> python .\main.py
+# Hi, PyCharm
+# ctrl / - automatyczny komentarz
