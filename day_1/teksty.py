@@ -37,3 +37,22 @@ print(tekst.removesuffix("Świecie").strip())  # "Witaj"
 
 tekst_zamiana = "Witaj Dobry Świecie"
 print(tekst_zamiana.replace("Dobry", ""))  # "Witaj  Świecie"
+
+encode_s = tekst.encode('utf-8')
+print(encode_s) # b'Witaj \xc5\x9awiecie'
+print(type(encode_s)) # <class 'bytes'> dane bajtowe, literka b
+# \xc5\x9a zapis szesnastkowy dla literki "Ś"
+print(encode_s.decode('utf-8')) # Witaj Świecie
+
+imie ="Radek"
+# f string, tekst sformatowany
+tekst_format = f"Mam na imię {imie} i lubię pythona"
+print(tekst_format) # Mam na imię Radek i lubię pythona
+
+tekst_format = f"\tMam na imię {imie}\n i lubię pythona.\b"
+print(tekst_format)
+# "	  Mam na imię Radek
+#  i lubię pythona"
+# \t - tabulator
+# \n - nowa linia
+# \b - backspace
