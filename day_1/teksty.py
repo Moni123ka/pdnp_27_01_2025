@@ -72,3 +72,7 @@ print("""Tekst
 # traktowany jako dokumentacja
 """Komentarz
     wielolinijkowy"""
+'''
+Komentarz 
+    wielolinijkowy
+'''
