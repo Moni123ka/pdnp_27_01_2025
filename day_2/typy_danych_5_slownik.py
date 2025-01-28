@@ -41,3 +41,33 @@ print(dict_small)  # {'x': 2}
 dict_small.update([('y', 3), ("z", 5)])
 print(dict_small)  # {'x': 2, 'y': 3, 'z': 5}
 
+# input() - pozwala wprowadzic dane do komputera
+# tekst = input("Podaj imię")
+# print(tekst)
+# Podaj imięRadek
+# Radek
+
+# napisac aplikacje kalkulator
+# pobrac dwie liczby
+# wyświetlić wynik dodawania
+# a = input("Podaj pierwszą liczbę")  # <class 'str'>, zwraca str
+# print(type(a))
+# b = int(input("Podaj druga liczbę"))
+# print(float(a) + b)  # 9.0
+
+# napisać aplikację słownik pol_ang
+pol_ang = {"kot": 'cat', 'pies': "dog", 'dach': "roof"}
+print("Znam takie słówka", pol_ang.keys())
+odp = input("Podaj słówko do przetłumczenia")
+# print(pol_ang[odp.lower().strip()])
+# Podaj słówko do przetłumczeniakot
+# cat
+print(pol_ang.get(odp.strip().lower(), "nie mo"))
+# Podaj słówko do przetłumczeniaKot
+# cat
+# ẞ  = ss
+print(pol_ang.get(odp.strip().casefold(), "nie mo"))
+name1 = "GROSS"
+name2 = "groẞ"
+print(name1.lower() == name2.lower())  # False
+print(name1.casefold() == name2.casefold())  # True
