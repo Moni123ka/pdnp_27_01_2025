@@ -78,3 +78,58 @@ print(f"Rabat wynosi {rabat}")  # Rabat wynosi 25
 
 rabat = 25 if suma_zam > 100 else 0  # operator warunkowy
 print(f"Rabat wynosi {rabat}")  # Rabat wynosi 25
+
+# zasymulejemy system zbierania logów
+# zmienna będzie zawierać informację jaki system przysłął log
+# email, console, inny (else)
+# gdy log z systemu "console" wyświetlimy napis "Stało się coś strasznego"
+# email -> "System email"
+# jesli system email to do listy błędów wpisać opis błedu (error -> Krytyczny)
+# error -> error, medium, inny
+
+# alert_system = input("System: ").strip().casefold()
+# lista_b = []  # pusta lista błędów
+#
+# if alert_system == "console":
+#     print("Stało się coś strasznego")
+# elif alert_system == "email":
+#     print("System email")
+#     error = input("Podaj typ błędu").strip().casefold()  # error, medium, inny
+#     if error == "error":
+#         lista_b.append('Krytyczny')
+#     elif error == "medium":
+#         lista_b.append("Ostrzeżenie")
+#     else:
+#         print("nie znam")
+#     print(lista_b)
+# else:
+#     print("inny")
+# System: email
+# System email
+# Podaj typ błęduerror
+# ['Krytyczny']
+
+# napisać program test z...
+# zadać pytanie -> input()
+# pobrać odpowiedź
+# sprawdzić czy odpowiedź jest właściwa i wypisać wynik -> if...
+punkty = 0
+odp = input("Podaj rok Chrztu Polski")  # str
+if odp.strip().casefold() == "966":
+    punkty += 1  # punkty = punkty + 1
+    print("Dobrze", "zdobyłes pkt: ", punkty)
+else:
+    print("Idź się pouczyć")
+
+odp = input("Gdzie się odbył?")
+if odp.strip().casefold() == "Gniezno".strip().casefold():
+    punkty += 1  # punkty = punkty + 1
+    print("Dobrze", "zdobyłes pkt: ", punkty)
+else:
+    print("Tragedia")
+print("Razem punktów: ", punkty)
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
