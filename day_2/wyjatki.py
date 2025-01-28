@@ -10,7 +10,7 @@ lista = []
 try:
     # print(5 / 0)
     # print("A" * "23")
-    print(lista[10])
+    # print(lista[10])
     # raise KeyError("Brak klucza")  # rzucić bład (wyjątek)
     wynik = 90 / 33
 except ZeroDivisionError:
