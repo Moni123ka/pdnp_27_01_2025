@@ -20,7 +20,7 @@ except TypeError:
 except IndexError:
     print("Nie ma elementu w liście")
 except Exception as e:
-    print("Bład", e)
+    print("Bład", e)  # # Bład 'Brak klucza'
 else:  # gdy nie ma błedu
     print("Wynik", wynik)
 finally:
