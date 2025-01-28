@@ -53,17 +53,28 @@ if (n := len(a)) > 3:
 
 # kolejność warunków ma zanczenie
 # pierwszy true kończy sprawdzanie pozostałych
-podatek = 0
-zarobki = int(input("Podaj zarobki"))
-if zarobki < 10_000:
-    podatek = 0
-elif zarobki < 40_000:
-    podatek = 0.2
-elif zarobki < 100_000:
-    podatek = 0.4
-else:
-    podatek = 0.9
+# podatek = 0
+# zarobki = int(input("Podaj zarobki"))
+# if zarobki < 10_000:
+#     podatek = 0
+# elif zarobki < 40_000:
+#     podatek = 0.2
+# elif zarobki < 100_000:
+#     podatek = 0.4
+# else:
+#     podatek = 0.9
+#
+# print(f"Podatek wynosi {podatek * zarobki} pln. wynosi {podatek * 100} %")
+# # Podatek wynosi 22715.600000000002 pln. wynosi 40.0 %
+# # podatek 0.2 dla przedziału 10_000 do 39_999
 
-print(f"Podatek wynosi {podatek * zarobki} pln. wynosi {podatek * 100} %")
-# Podatek wynosi 22715.600000000002 pln. wynosi 40.0 %
-# podatek 0.2 dla przedziału 10_000 do 39_999
+suma_zam = 150
+if suma_zam > 100:
+    rabat = 25
+else:
+    rabat = 0
+
+print(f"Rabat wynosi {rabat}")  # Rabat wynosi 25
+
+rabat = 25 if suma_zam > 100 else 0  # operator warunkowy
+print(f"Rabat wynosi {rabat}")  # Rabat wynosi 25
