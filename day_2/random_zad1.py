@@ -20,3 +20,4 @@ print(wyn)  # 27
 print(random.choices(lista_kule, k=6))  # [8, 31, 31, 45, 43, 20] z powtórzeniami
 print(random.sample(lista_kule, k=6))  # [26, 43, 9, 1, 12, 27] # bez powtórzeń
 print(random.sample(lista_kule, 6))  # [34, 20, 19, 12, 35, 2]
+# ctrl / - komentarze
