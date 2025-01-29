@@ -27,3 +27,22 @@ print("Sformatowany czas:", formated_time)  # Sformatowany czas: 13:43
 
 formated_time_usa = datetime.now().strftime("%I:%M %p")
 print("Sdformatowany czas 12h:", formated_time_usa)  # Sdformatowany czas 12h: 01:44 PM
+
+products = [
+    {"sku": 1, "exp_date": today, "price": 100},
+    {"sku": 2, "exp_date": today, "price": 50},
+    {"sku": 3, "exp_date": tommorow, "price": 200},
+    {"sku": 4, "exp_date": today, "price": 100.99},
+    {"sku": 5, "exp_date": tommorow, "price": 500},
+    {"sku": 6, "exp_date": today, "price": 250},
+]
+
+for product in products:
+    # print(product)
+    # print(type(product))
+    print(product['exp_date'])
+    if product['exp_date'] != today:
+        continue  # zakończy działąnie pętli, weźmie kolejny elelemnt z listy i uruchomi kolejne przejscie pętli
+    product['price'] *= 0.8  # price = price * 0.8
+    print(f"""Price for sku {product['sku']}
+is now {product['price']}""")
