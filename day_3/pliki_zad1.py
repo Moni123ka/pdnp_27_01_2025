@@ -42,7 +42,7 @@ with open("test.log", "a", encoding="utf-8") as fh:  # fh - filehandler
     fh.write("Jeszcze jedno\n")
     fh.write("Dopisane\n")
     fh.write("Dopisane\n")
-    fh.write("Dopiśane\n")
+    fh.write("Dopiśćąźane\n")
 
 # "r" odczyt pliku
 with open("test.log", "r", encoding="utf-8") as file:
