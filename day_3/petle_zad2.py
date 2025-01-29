@@ -57,3 +57,19 @@ print(ang_pol)  # {'cat': 'kot', 'dog': 'pies', 'roof': 'dach'}
 
 print({value: key for key, value in pol_ang.items()})
 # {'cat': 'kot', 'dog': 'pies', 'roof': 'dach'}
+
+# test Tabnine
+print({value: key for key, value in pol_ang.items()})
+print({value: key for key, value in pol_ang.items()})
+print()  # {'cat': 'kot', 'dog': 'pies',   '           '}
+# zrób pętlę po słowniku
+for k, v in pol_ang.items():
+    print(f"{k}: {v}")
+    print(f"{v}: {k}")
+# zrób pętle i wypisz wszystkie pary opisując eleemnty
+for k, v in pol_ang.items():
+    print(f"{k}: {v} => {ang_pol[v]}")
+# kot: cat => kot
+# pies: dog => pies
+# dach: roof => dach
+# coopilot
