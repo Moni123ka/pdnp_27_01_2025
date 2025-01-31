@@ -121,3 +121,6 @@ spam %= 1    spam = spam % 1
 
 https://www.w3schools.com/python/python_for_loops.asp
 https://pl.altapps.net/soft/hackerrank-com?page=2
+
+pip freeze > requirements.txt
+pip install -r .\requirements.txt
